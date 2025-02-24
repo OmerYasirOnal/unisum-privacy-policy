@@ -1,28 +1,56 @@
 # Gizlilik Politikası - UniSum  
 
-Son Güncelleme: 24/02/2025  
+📅 **Son Güncelleme:** 24 Şubat 2025  
 
 UniSum olarak kullanıcılarımızın gizliliğine önem veriyoruz. Bu gizlilik politikası, uygulamamızın nasıl veri topladığını, kullandığını ve koruduğunu açıklar.  
 
-## 1. Toplanan Bilgiler  
-UniSum, kullanıcıların **derslerini ve notlarını yönetmesine yardımcı olmak** için geliştirilmiştir. Uygulama, aşağıdaki bilgileri saklayabilir:  
-- **Kullanıcı Hesap Bilgileri** (eğer kayıt/giriş yapıyorsanız)  
-- **Ders ve Not Verileri** (cihazınıza kaydedilir ve sunucularımıza gönderilmez)  
+---
 
-## 2. Bilgiler Nasıl Kullanılır?  
+## **1️⃣ Toplanan Bilgiler**  
+UniSum, kullanıcıların akademik bilgilerini yönetmesine yardımcı olmak için geliştirilmiştir. Uygulama, aşağıdaki bilgileri saklayabilir:  
+
+- **📌 Kullanıcı Hesap Bilgileri:** Giriş yapmak için e-posta ve şifre alınır.  
+- **📌 Ders ve Not Bilgileri:** Kullanıcıların eklediği dersler, notlar ve ağırlıklar kaydedilir.  
+- **📌 Üniversite ve Bölüm Bilgisi:** Kullanıcıların akademik takibini kolaylaştırmak amacıyla saklanır.  
+
+---
+
+## **2️⃣ Bilgiler Nasıl Kullanılır?**  
 Toplanan veriler yalnızca **UniSum uygulamasının temel işlevlerini sağlamak** için kullanılır.  
-- Not hesaplamaları ve ders yönetimi için veriler cihazda saklanır.  
-- Hiçbir kişisel bilgi üçüncü taraflarla paylaşılmaz.  
 
-## 3. Üçüncü Taraf Hizmetleri  
-Uygulamamız, **Google Firebase** veya benzeri üçüncü taraf hizmetleri kullanıyorsa, bu hizmetler kendi gizlilik politikalarına sahiptir.  
+- Kullanıcıların **not hesaplamalarını ve akademik yönetimini** kolaylaştırmak amacıyla veriler güvenli bir şekilde saklanır.  
+- Hiçbir bilgi **üçüncü taraflarla paylaşılmaz veya satılmaz.**  
 
-## 4. Güvenlik  
-Kullanıcı verilerinin güvenliğini sağlamak için **HTTPS protokolü** kullanılır ve yetkisiz erişimi önlemek için önlemler alınır.  
+---
 
-## 5. Kullanıcı Hakları  
-Kullanıcılar istedikleri zaman hesaplarını silebilir ve uygulamada kayıtlı olan verilerini kaldırabilirler.  
+## **3️⃣ Üçüncü Taraf Hizmetleri ve Veri Paylaşımı**  
+✅ **UniSum, kullanıcı verilerini üçüncü taraflarla paylaşmaz.**  
+✅ **Tüm veriler yalnızca uygulama içinde işlenir.**  
 
-## 6. İletişim  
+---
+
+## **4️⃣ Güvenlik**  
+✅ Kullanıcı verileri, yetkisiz erişimi önlemek için **şifrelenmiş veritabanlarında** saklanır.  
+✅ Tüm ağ bağlantıları **HTTPS** protokolü üzerinden sağlanır.  
+
+---
+
+## **5️⃣ Kullanıcı Hakları**  
+- **❌ Kullanıcılar hesaplarını silemez.** Şu an için uygulama içinde hesap silme seçeneği bulunmamaktadır.  
+- ✅ Kullanıcılar istedikleri zaman hesaplarına giriş yaparak bilgilerini düzenleyebilir.  
+
+---
+
+## **6️⃣ Giriş Zorunluluğu**  
+✅ **UniSum uygulamasına kayıt olmadan giriş yapılamaz.** Kullanıcıların tüm verileri hesaplarına bağlıdır.  
+
+---
+
+## **7️⃣ İletişim**  
 Herhangi bir sorunuz varsa, bizimle aşağıdaki adresten iletişime geçebilirsiniz:  
+
 📧 **engomeryasironal@gmail.com**  
+
+---
+
+**Bu Gizlilik Politikası, UniSum uygulaması için geçerlidir.**  
