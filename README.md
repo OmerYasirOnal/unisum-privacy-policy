@@ -41,8 +41,9 @@ Toplanan veriler yalnızca **UniSum uygulamasının temel işlevlerini sağlamak
 
 ---
 
-## **6️⃣ Giriş Zorunluluğu**  
-✅ **UniSum uygulamasına kayıt olmadan giriş yapılamaz.** Kullanıcıların tüm verileri hesaplarına bağlıdır.  
+## **6️⃣ Kayıt Olmadan Kullanılabilen Özellikler**  
+✅ UniSum uygulamasında, “Çevrimdışı Not Hesaplayıcı (Offline Grade Calculator)” gibi temel bazı özelliklere kayıt olmadan erişebilirsiniz.
+✅ Kişisel verilerinizi girmeden not hesaplaması yapabilirsiniz.
 
 ---
 
