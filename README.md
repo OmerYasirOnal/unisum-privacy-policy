@@ -36,8 +36,8 @@ Toplanan veriler yalnızca **UniSum uygulamasının temel işlevlerini sağlamak
 ---
 
 ## **5️⃣ Kullanıcı Hakları**  
-- **❌ Kullanıcılar hesaplarını silemez.** Şu an için uygulama içinde hesap silme seçeneği bulunmamaktadır.  
-- ✅ Kullanıcılar istedikleri zaman hesaplarına giriş yaparak bilgilerini düzenleyebilir.  
+✅ Kullanıcılar, uygulama içindeki “Hesabımı Sil” seçeneğini kullanarak hesaplarını kalıcı olarak silebilir.
+✅ Hesap silme işlemi yapıldığında, sunucularımızdaki kişisel verileriniz geri döndürülemez şekilde silinir.
 
 ---
 
