@@ -31,6 +31,22 @@
     a {
       color: #0366d6;
     }
+    .language-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .language-toggle button {
+      background: #0366d6;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      margin-left: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .language-toggle button.active {
+      background: #024d9c;
+    }
     /* Responsive düzen */
     @media (max-width: 600px) {
       body {
@@ -38,56 +54,139 @@
       }
     }
   </style>
+  <script>
+    function setLanguage(lang) {
+      // Dil toggle butonları durumunu güncelle
+      document.getElementById("btn-tr").classList.toggle("active", lang === "tr");
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+      
+      // Türkçe ve İngilizce bölümleri göster/gizle
+      if (lang === "tr") {
+        document.getElementById("turkishPolicy").style.display = "block";
+        document.getElementById("englishPolicy").style.display = "none";
+      } else {
+        document.getElementById("turkishPolicy").style.display = "none";
+        document.getElementById("englishPolicy").style.display = "block";
+      }
+    }
+    
+    window.onload = function() {
+      // Varsayılan olarak Türkçe versiyonu göster
+      setLanguage("tr");
+    }
+  </script>
 </head>
 <body>
-  <h1>Gizlilik Politikası - UniSum</h1>
-  <p><strong>Son Güncelleme:</strong> 24 Şubat 2025</p>
+  <div class="language-toggle">
+    <span><strong>Language:</strong></span>
+    <button id="btn-tr" onclick="setLanguage('tr')">Türkçe</button>
+    <button id="btn-en" onclick="setLanguage('en')">English</button>
+  </div>
   
-  <p>UniSum olarak kullanıcılarımızın gizliliğine önem veriyoruz. Bu gizlilik politikası, uygulamamızın nasıl veri topladığını, kullandığını ve koruduğunu açıklar.</p>
+  <!-- Türkçe Gizlilik Politikası -->
+  <div id="turkishPolicy">
+    <h1>Gizlilik Politikası - UniSum</h1>
+    <p><strong>Son Güncelleme:</strong> 24 Şubat 2025</p>
+    
+    <p>UniSum olarak kullanıcılarımızın gizliliğine önem veriyoruz. Bu gizlilik politikası, uygulamamızın nasıl veri topladığını, kullandığını ve koruduğunu açıklar.</p>
+    
+    <h2>1️⃣ Toplanan Bilgiler</h2>
+    <p>UniSum, kullanıcıların akademik bilgilerini yönetmesine yardımcı olmak için geliştirilmiştir. Uygulama, aşağıdaki bilgileri saklayabilir:</p>
+    <ul>
+      <li><strong>Kullanıcı Hesap Bilgileri:</strong> Giriş yapmak için e-posta ve şifre alınır.</li>
+      <li><strong>Ders ve Not Bilgileri:</strong> Kullanıcıların eklediği dersler, notlar ve ağırlıklar kaydedilir.</li>
+      <li><strong>Üniversite ve Bölüm Bilgisi:</strong> Kullanıcıların akademik takibini kolaylaştırmak amacıyla saklanır.</li>
+    </ul>
+    
+    <h2>2️⃣ Bilgiler Nasıl Kullanılır?</h2>
+    <p>Toplanan veriler yalnızca <strong>UniSum uygulamasının temel işlevlerini sağlamak</strong> için kullanılır.</p>
+    <ul>
+      <li>Kullanıcıların <strong>not hesaplamalarını ve akademik yönetimini</strong> kolaylaştırmak amacıyla veriler güvenli bir şekilde saklanır.</li>
+      <li>Hiçbir bilgi <strong>üçüncü taraflarla paylaşılmaz veya satılmaz.</strong></li>
+    </ul>
+    
+    <h2>3️⃣ Üçüncü Taraf Hizmetleri ve Veri Paylaşımı</h2>
+    <ul>
+      <li><strong>UniSum</strong>, kullanıcı verilerini üçüncü taraflarla <strong>paylaşmaz</strong>.</li>
+      <li>Tüm veriler yalnızca <strong>uygulama içinde</strong> işlenir.</li>
+    </ul>
+    
+    <h2>4️⃣ Güvenlik</h2>
+    <ul>
+      <li>Kullanıcı verileri, yetkisiz erişimi önlemek için <strong>şifrelenmiş veritabanlarında</strong> saklanır.</li>
+      <li>Tüm ağ bağlantıları <strong>HTTPS</strong> protokolü üzerinden sağlanır.</li>
+    </ul>
+    
+    <h2>5️⃣ Kullanıcı Hakları</h2>
+    <ul>
+      <li>Kullanıcılar, uygulama içindeki <strong>“Hesabımı Sil”</strong> seçeneğini kullanarak hesaplarını kalıcı olarak silebilir.</li>
+      <li>Hesap silme işlemi yapıldığında, sunucularımızdaki kişisel verileriniz ve ders verileriniz geri döndürülemez şekilde silinir.</li>
+    </ul>
+    
+    <h2>6️⃣ Kayıt Olmadan Kullanılabilen Özellikler</h2>
+    <ul>
+      <li>UniSum uygulamasında, <strong>“Çevrimdışı Not Hesaplayıcı (Offline Grade Calculator)”</strong> gibi temel bazı özelliklere kayıt olmadan erişebilirsiniz.</li>
+      <li>Kişisel verilerinizi girmeden not hesaplaması yapabilirsiniz.</li>
+    </ul>
+    
+    <h2>7️⃣ İletişim</h2>
+    <p>Herhangi bir sorunuz varsa, bizimle aşağıdaki adresten iletişime geçebilirsiniz:</p>
+    <p><strong>engomeryasironal@gmail.com</strong></p>
+    
+    <p><em>Bu Gizlilik Politikası, UniSum uygulaması için geçerlidir.</em></p>
+  </div>
   
-  <h2>1️⃣ Toplanan Bilgiler</h2>
-  <p>UniSum, kullanıcıların akademik bilgilerini yönetmesine yardımcı olmak için geliştirilmiştir. Uygulama, aşağıdaki bilgileri saklayabilir:</p>
-  <ul>
-    <li><strong>Kullanıcı Hesap Bilgileri:</strong> Giriş yapmak için e-posta ve şifre alınır.</li>
-    <li><strong>Ders ve Not Bilgileri:</strong> Kullanıcıların eklediği dersler, notlar ve ağırlıklar kaydedilir.</li>
-    <li><strong>Üniversite ve Bölüm Bilgisi:</strong> Kullanıcıların akademik takibini kolaylaştırmak amacıyla saklanır.</li>
-  </ul>
-  
-  <h2>2️⃣ Bilgiler Nasıl Kullanılır?</h2>
-  <p>Toplanan veriler yalnızca <strong>UniSum uygulamasının temel işlevlerini sağlamak</strong> için kullanılır.</p>
-  <ul>
-    <li>Kullanıcıların <strong>not hesaplamalarını ve akademik yönetimini</strong> kolaylaştırmak amacıyla veriler güvenli bir şekilde saklanır.</li>
-    <li>Hiçbir bilgi <strong>üçüncü taraflarla paylaşılmaz veya satılmaz.</strong></li>
-  </ul>
-  
-  <h2>3️⃣ Üçüncü Taraf Hizmetleri ve Veri Paylaşımı</h2>
-  <ul>
-    <li><strong>UniSum</strong>, kullanıcı verilerini üçüncü taraflarla <strong>paylaşmaz</strong>.</li>
-    <li>Tüm veriler yalnızca <strong>uygulama içinde</strong> işlenir.</li>
-  </ul>
-  
-  <h2>4️⃣ Güvenlik</h2>
-  <ul>
-    <li>Kullanıcı verileri, yetkisiz erişimi önlemek için <strong>şifrelenmiş veritabanlarında</strong> saklanır.</li>
-    <li>Tüm ağ bağlantıları <strong>HTTPS</strong> protokolü üzerinden sağlanır.</li>
-  </ul>
-  
-  <h2>5️⃣ Kullanıcı Hakları</h2>
-  <ul>
-    <li>Kullanıcılar, uygulama içindeki <strong>“Hesabımı Sil”</strong> seçeneğini kullanarak hesaplarını kalıcı olarak silebilir.</li>
-    <li>Hesap silme işlemi yapıldığında, sunucularımızdaki kişisel verileriniz ve ders verileriniz geri döndürülemez şekilde silinir.</li>
-  </ul>
-  
-  <h2>6️⃣ Kayıt Olmadan Kullanılabilen Özellikler</h2>
-  <ul>
-    <li>UniSum uygulamasında, <strong>“Çevrimdışı Not Hesaplayıcı (Offline Grade Calculator)”</strong> gibi temel bazı özelliklere kayıt olmadan erişebilirsiniz.</li>
-    <li>Kişisel verilerinizi girmeden not hesaplaması yapabilirsiniz.</li>
-  </ul>
-  
-  <h2>7️⃣ İletişim</h2>
-  <p>Herhangi bir sorunuz varsa, bizimle aşağıdaki adresten iletişime geçebilirsiniz:</p>
-  <p><strong>engomeryasironal@gmail.com</strong></p>
-  
-  <p><em>Bu Gizlilik Politikası, UniSum uygulaması için geçerlidir.</em></p>
+  <!-- English Privacy Policy -->
+  <div id="englishPolicy" style="display:none;">
+    <h1>Privacy Policy - UniSum</h1>
+    <p><strong>Last Updated:</strong> February 24, 2025</p>
+    
+    <p>At UniSum, we value the privacy of our users. This privacy policy explains how our application collects, uses, and protects data.</p>
+    
+    <h2>1️⃣ Information Collected</h2>
+    <p>UniSum is designed to help manage your academic information. The app may store the following data:</p>
+    <ul>
+      <li><strong>User Account Information:</strong> Email and password are collected for login purposes.</li>
+      <li><strong>Course and Grade Data:</strong> Courses, grades, and weightings entered by users are stored.</li>
+      <li><strong>University and Department Information:</strong> Stored to facilitate academic tracking.</li>
+    </ul>
+    
+    <h2>2️⃣ How Information Is Used</h2>
+    <p>The collected data is used solely to <strong>provide the core functionality of the UniSum application</strong>.</p>
+    <ul>
+      <li>Data is securely stored to help with <strong>grade calculations and academic management</strong>.</li>
+      <li>No information is shared or sold to third parties.</li>
+    </ul>
+    
+    <h2>3️⃣ Third-Party Services and Data Sharing</h2>
+    <ul>
+      <li><strong>UniSum</strong> does not share user data with third parties.</li>
+      <li>All data is processed solely within the application.</li>
+    </ul>
+    
+    <h2>4️⃣ Security</h2>
+    <ul>
+      <li>User data is stored in <strong>encrypted databases</strong> to prevent unauthorized access.</li>
+      <li>All network connections use the <strong>HTTPS</strong> protocol.</li>
+    </ul>
+    
+    <h2>5️⃣ User Rights</h2>
+    <ul>
+      <li>Users can permanently delete their accounts using the <strong>"Delete My Account"</strong> option within the app.</li>
+      <li>Once deleted, your personal and course data on our servers is irretrievably removed.</li>
+    </ul>
+    
+    <h2>6️⃣ Features Available Without Registration</h2>
+    <ul>
+      <li>The UniSum app allows access to certain core features, such as the <strong>"Offline Grade Calculator"</strong>, without requiring an account.</li>
+      <li>You can perform grade calculations without entering any personal data.</li>
+    </ul>
+    
+    <h2>7️⃣ Contact</h2>
+    <p>If you have any questions, please contact us at:</p>
+    <p><strong>engomeryasironal@gmail.com</strong></p>
+    
+    <p><em>This Privacy Policy is applicable to the UniSum application.</em></p>
+  </div>
 </body>
 </html>
